@@ -67,8 +67,8 @@ module cubic( input  ___________ [_____:_____] in,    // <10, 7> signed
   
   
   // in^3 * Constant
-  signed wire [19:0] cmul;      // <20, 15>  signed
-  signed wire [9:0]  cmul_10;   // <10, 6>   signed
+  wire signed [19:0] cmul;      // <20, 15>  signed
+  wire signed [9:0]  cmul_10;   // <10, 6>   signed
   
   assign cmul = _________________________________________
 
@@ -78,7 +78,7 @@ module cubic( input  ___________ [_____:_____] in,    // <10, 7> signed
   
   
   // in^3 * Constant "+ 1"
-  signed wire [9:0] result;      // <10, 6> signed
+  wire signed [9:0] result;      // <10, 6> signed
   
   assign result = cmul_10 + _________________________________;
   
